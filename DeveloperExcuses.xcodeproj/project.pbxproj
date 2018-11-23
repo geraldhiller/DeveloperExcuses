@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		072388011FE6885200B1E0E2 /* OnelinerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072387FF1FE6884A00B1E0E2 /* OnelinerKit.framework */; };
-		072388021FE6885200B1E0E2 /* OnelinerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 072387FF1FE6884A00B1E0E2 /* OnelinerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		075B3C1821A8565500C0EDFF /* OnelinerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5E451218645D50005E36F /* OnelinerView.swift */; };
+		075B3C1921A8565B00C0EDFF /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5E454218645DF0005E36F /* String+Constants.swift */; };
+		075B3C1A21A8565D00C0EDFF /* NSTextField+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5E455218645DF0005E36F /* NSTextField+Label.swift */; };
+		075B3C1B21A8565E00C0EDFF /* UserDefaults+LastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5E456218645DF0005E36F /* UserDefaults+LastLine.swift */; };
+		075B3C1C21A8565F00C0EDFF /* Date+FetchInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5E457218645DF0005E36F /* Date+FetchInterval.swift */; };
+		075B3C1D21A8566000C0EDFF /* TimeInterval+FetchInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5E458218645DF0005E36F /* TimeInterval+FetchInterval.swift */; };
+		075B3C1E21A8569C00C0EDFF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9D0E6C17DB87B300DBFFBD /* AppKit.framework */; };
 		076642F11EE92D6D00FE8619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076642F01EE92D6D00FE8619 /* AppDelegate.swift */; };
 		076642F51EE92D6D00FE8619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076642F41EE92D6D00FE8619 /* Assets.xcassets */; };
 		076642FD1EE92D9500FE8619 /* DeveloperExcusesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077BC2B01DA22D14007DE060 /* DeveloperExcusesView.swift */; };
@@ -26,20 +31,6 @@
 		8117802E1D80A79F00127177 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8117802D1D80A79F00127177 /* thumbnail@2x.png */; };
 		811780321D80B5DD00127177 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 811780311D80B5DD00127177 /* thumbnail.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		07A101791FE687A600F7A42F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				072388021FE6885200B1E0E2 /* OnelinerKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		072387FF1FE6884A00B1E0E2 /* OnelinerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OnelinerKit.framework; path = Carthage/Build/Mac/OnelinerKit.framework; sourceTree = "<group>"; };
@@ -73,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				072388011FE6885200B1E0E2 /* OnelinerKit.framework in Frameworks */,
+				075B3C1E21A8569C00C0EDFF /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +194,6 @@
 				076642EA1EE92D6D00FE8619 /* Sources */,
 				076642EB1EE92D6D00FE8619 /* Frameworks */,
 				076642EC1EE92D6D00FE8619 /* Resources */,
-				07A101791FE687A600F7A42F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,8 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075B3C1921A8565B00C0EDFF /* String+Constants.swift in Sources */,
+				075B3C1D21A8566000C0EDFF /* TimeInterval+FetchInterval.swift in Sources */,
+				075B3C1C21A8565F00C0EDFF /* Date+FetchInterval.swift in Sources */,
+				075B3C1A21A8565D00C0EDFF /* NSTextField+Label.swift in Sources */,
+				075B3C1B21A8565E00C0EDFF /* UserDefaults+LastLine.swift in Sources */,
 				076642FD1EE92D9500FE8619 /* DeveloperExcusesView.swift in Sources */,
 				076642F11EE92D6D00FE8619 /* AppDelegate.swift in Sources */,
+				075B3C1821A8565500C0EDFF /* OnelinerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

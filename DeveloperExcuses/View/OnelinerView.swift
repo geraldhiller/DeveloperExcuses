@@ -25,7 +25,7 @@ open class OnelinerView: ScreenSaverView {
         initialize()
     }
     
-    override init!(frame: NSRect, isPreview: Bool) {
+    override public init!(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
         label = .label(isPreview, bounds: frame)
         initialize()
